@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<div>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Menu Principal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="librerias/bootstrap/css/bootstrap.css">
+	  <link rel="stylesheet" type="text/css" href="librerias/alertifyjs/css/alertify.css">
+	  <link rel="stylesheet" type="text/css" href="librerias/alertifyjs/css/themes/default.css">
+    <meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no"/>
+  </head>
+  <head>
+    <body>
+      <nav id="MenuInicio" class="navbar navbar-dark bg-dark">
+        <a id="Texto Soldar" class="navbar-brand" href="#">CONSTRUCTORA SOLDAR</a>
+        <form id="MenuI"class="form-inline">
+          <a href="./index.html"><button class="btn btn-outline-primary" id="btn-Iniciar" type="button">Contactenos</button></a>
+          <button class="btn btn-outline-primary" id="btn-Contactenos" type="button">Registrarse</button>
+          <button class="btn btn-outline-primary" id="btn-Registrarse" type="button">Iniciar Sesion</button>
+        </form>
+      </nav>
+      <main>
+        <div class="contenedor__todo">
+          <div class="caja__trasera">
+            <div class="caja__trasera-login">
+              <h3>¿Ya tienes una cuenta?</h3>
+              <p>Iniciar sesion para entrar a la pagina</p>
+              <button id="btn__iniciar-sesion">Iniciar Sesion</button>
+            </div>
+            <div class="caja__trasera-register">
+              <h3>¿Aun no tienes una cuenta ?</h3>
+              <p>Registrarte para que puedas inciar sesion</p>
+              <button id="btn__registrarse">Registrarse</button>
+            </div>
+          </div>
+          <div class="contenedor__login-register">
+            <form class="formulario__login">
+              <h2>Iniciar Sesion</h2>
+              <input type="text" placeholder="Correo Electronico" id="CorreoInicio"/>
+              <input type="password" placeholder="Contraseña" id="passwordInicio"/>
+              <center>
+                <button type="button" onclick="Login()">Entrar</button>
+              </center>
+            </form>
+            <form class="formulario__register">
+              <h2>Registrarse</h2>
+              <input type="text" placeholder="Nombre Completo" id="Nombre_Completo"/>
+              <input type="number" placeholder="Telefono" id="Telefono"/>
+              <input type="text" placeholder="Ciudad" id="Ciudad"/>
+              <input type="text" placeholder="Correo Electronico" id="Correo" />
+              <input type="password" placeholder="Contraseña" id="Contraseña" />
+              <input type="password" placeholder="Validar Contraseña" id="Validar_Contraseña"/>
+              <center><button type="button" onclick="RegistroUser()">Registrarse</button></center>
+            </form>
+          </div>
+        </div>
+        <script src="JavaScript/app.js"></script>
+      </main>
+      <script src="json.js"></script>
+    </body>
+  </head>
+</div>
+</html>
